@@ -123,10 +123,13 @@ h3 { font-size: 17px; letter-spacing: 0; line-height: 1.28; margin-bottom: 7px; 
 .case { overflow: hidden; padding: 0; }
 .case-copy { padding: 20px; }
 .case-kicker { color: var(--accent-dark); font-size: 12px; font-weight: 800; margin-bottom: 7px; text-transform: uppercase; }
-.case-result { background: var(--tag-bg); border-top: 1px solid #d9e4ff; color: var(--text) !important; font-weight: 700; margin: 16px -20px -20px !important; padding: 14px 20px; }
+.case-result { background: var(--tag-bg); border: 1px solid #d9e4ff; border-radius: 12px; margin-top: 20px; padding: 14px 16px; }
+.case-result-label { color: var(--tag-text); display: block; font-size: 12px; font-weight: 800; margin-bottom: 5px; text-transform: uppercase; }
+.case-result p { color: var(--text) !important; font-weight: 700; margin: 0; }
 .case-image { aspect-ratio: 16 / 8; display: block; object-fit: cover; width: 100%; }
-.case-links { display: flex; flex-wrap: wrap; gap: 10px 16px; margin-top: 13px; }
-.case-links a { font-size: 14px; font-weight: 750; }
+.case-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0; }
+.case-links a { align-items: center; background: #fff; border: 1px solid var(--accent); border-radius: 999px; display: inline-flex; font-size: 14px; font-weight: 750; min-height: 36px; padding: 7px 11px; text-decoration: none; }
+.case-links a:hover { background: #f8fbff; text-decoration: none; }
 
 .note { background: var(--tag-bg); border: 1px solid #d9e4ff; border-radius: 16px; margin-top: 18px; padding: 16px; }
 .note p:last-child { margin-bottom: 0; }
