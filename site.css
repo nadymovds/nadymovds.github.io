@@ -108,6 +108,7 @@ h3 { font-size: 17px; letter-spacing: 0; line-height: 1.28; margin-bottom: 7px; 
 .skill, .compact-card { padding: 16px; }
 .skill h3, .compact-card h3 { color: var(--accent-dark); font-size: 15px; margin-bottom: 6px; }
 .skill p, .compact-card p { margin-bottom: 0; }
+.compact-media { border: 1px solid var(--line); border-radius: 12px; display: block; margin: 14px 0; width: 100%; }
 .tags { display: flex; flex-wrap: wrap; gap: 7px; list-style: none; margin: 14px 0 0; padding: 0; }
 .tags li { background: var(--tag-bg); border-radius: 999px; color: var(--tag-text); font-size: 12px; font-weight: 700; padding: 4px 8px; }
 
@@ -131,12 +132,25 @@ h3 { font-size: 17px; letter-spacing: 0; line-height: 1.28; margin-bottom: 7px; 
 .case-links a { align-items: center; background: #fff; border: 1px solid var(--accent); border-radius: 999px; display: inline-flex; font-size: 14px; font-weight: 750; min-height: 36px; padding: 7px 11px; text-decoration: none; }
 .case-links a:hover { background: #f8fbff; text-decoration: none; }
 
+.media-stack { display: grid; gap: 32px; }
+.media-group { border-top: 1px solid var(--line); padding-top: 24px; }
+.media-group:first-child { border-top: 0; padding-top: 0; }
+.media-group h3 { color: var(--accent-dark); margin-bottom: 5px; }
+.media-group > p { color: var(--muted); font-size: 14.5px; margin-bottom: 15px; }
+.media-grid { display: grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.media-grid-portrait { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.media-item { background: #fbfaf7; border: 1px solid var(--line); border-radius: 12px; margin: 0; overflow: hidden; }
+.media-item img { aspect-ratio: 16 / 10; display: block; object-fit: cover; width: 100%; }
+.media-grid-portrait .media-item img { aspect-ratio: 9 / 16; background: #152239; object-fit: contain; }
+.media-item figcaption { color: var(--muted); font-size: 12px; padding: 8px 10px; }
+
 .note { background: var(--tag-bg); border: 1px solid #d9e4ff; border-radius: 16px; margin-top: 18px; padding: 16px; }
 .note p:last-child { margin-bottom: 0; }
 .footer { color: var(--muted); font-size: 13px; margin-top: 24px; text-align: center; }
 
 @media (max-width: 820px) {
   .hero, .role, .metrics, .skill-grid, .case-grid, .compact-grid { grid-template-columns: 1fr; }
+  .media-grid, .media-grid-portrait { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .page { padding: 20px 14px 48px; }
   .topbar { align-items: flex-start; flex-direction: column; }
   .hero > div, .contact-panel, .section { padding: 24px; }
