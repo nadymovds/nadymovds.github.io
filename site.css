@@ -193,6 +193,20 @@ h3 { font-size: 17px; letter-spacing: 0; line-height: 1.28; margin-bottom: 7px; 
 .media-grid-portrait .media-item img { aspect-ratio: 9 / 16; background: #152239; object-fit: contain; }
 .media-item figcaption { color: var(--muted); font-size: 12px; padding: 8px 10px; }
 
+.case-carousel { min-width: 0; }
+.carousel-viewport { background: #f4f6fb; border: 1px solid var(--line); border-radius: 12px; display: flex; overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-width: none; scroll-snap-type: x mandatory; }
+.carousel-viewport::-webkit-scrollbar { display: none; }
+.carousel-viewport:focus-visible { outline: 3px solid rgba(29, 78, 216, 0.3); outline-offset: 3px; }
+.carousel-slide { flex: 0 0 100%; margin: 0; min-width: 0; scroll-snap-align: start; scroll-snap-stop: always; }
+.carousel-slide img { background: #f4f6fb; display: block; height: min(58vw, 620px); object-fit: contain; width: 100%; }
+.carousel-slide figcaption { background: #fff; color: var(--muted); font-size: 14px; padding: 10px 14px; }
+.carousel-portrait .carousel-slide img { background: #152239; height: min(78vh, 760px); }
+.carousel-controls { align-items: center; display: flex; gap: 12px; justify-content: center; margin-top: 14px; }
+.carousel-button { align-items: center; background: #fff; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); cursor: pointer; display: inline-flex; font-size: 21px; font-weight: 800; height: 40px; justify-content: center; line-height: 1; padding: 0; width: 40px; }
+.carousel-button:hover { background: #f8fbff; border-color: var(--accent); color: var(--accent-dark); }
+.carousel-button:focus-visible { outline: 3px solid rgba(29, 78, 216, 0.3); outline-offset: 2px; }
+.carousel-status { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; min-width: 48px; text-align: center; }
+
 .note { background: var(--tag-bg); border: 1px solid #d9e4ff; border-radius: 16px; margin-top: 18px; padding: 16px; }
 .note p:last-child { margin-bottom: 0; }
 .back-link { margin: 0 0 16px; }
@@ -237,6 +251,8 @@ h3 { font-size: 17px; letter-spacing: 0; line-height: 1.28; margin-bottom: 7px; 
   .detail-hero > div:first-child { padding: 28px 24px 0; }
   .detail-hero > img, .detail-hero-portrait { min-height: 220px; }
   .detail-hero-portrait img { max-height: 360px; }
+  .carousel-slide img { height: min(58vw, 360px); }
+  .carousel-portrait .carousel-slide img { height: min(76vh, 640px); }
   .section-header { display: block; }
   .section-header p { margin-top: 6px; }
 }

@@ -10,6 +10,7 @@
   <title>Dia-Log - Denis Nadymov</title>
   <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
   <link rel="stylesheet" href="../../site.css" />
+  <script src="../gallery.js" defer></script>
 </head>
 <body>
   <main class="page case-page">
@@ -30,14 +31,17 @@
       </section>
       <section class="section case-detail-section">
         <div class="section-header"><h2>Выбранные экраны</h2><p>Дневник, ввод данных, расчёт и рекомендации</p></div>
-        <div class="media-grid media-grid-portrait">
-          <figure class="media-item"><img src="../assets/dia-log/screenshot-main.png" alt="Дневник Dia-Log с приёмами пищи и дозами" /><figcaption>Дневник</figcaption></figure>
-          <figure class="media-item"><img src="../assets/dia-log/screenshot-input.png" alt="Ввод данных о приёме пищи в Dia-Log" /><figcaption>Запись приёма пищи</figcaption></figure>
-          <figure class="media-item"><img src="../assets/dia-log/screenshot-correction.png" alt="Ввод коррекции в Dia-Log" /><figcaption>Коррекция</figcaption></figure>
-          <figure class="media-item"><img src="../assets/dia-log/screenshot-maincorrection.png" alt="Дневник Dia-Log с коррекциями" /><figcaption>Дневник с коррекциями</figcaption></figure>
-          <figure class="media-item"><img src="../assets/dia-log/screenshot-calculate.png" alt="Расчёт дозы в Dia-Log" /><figcaption>Расчёт дозы</figcaption></figure>
-          <figure class="media-item"><img src="../assets/dia-log/screenshot-recommendation.png" alt="Рекомендация дозы и объяснение расчёта в Dia-Log" /><figcaption>Объяснение рекомендации</figcaption></figure>
-          <figure class="media-item"><img src="../assets/dia-log/screenshot-settings.png" alt="Настройки Dia-Log" /><figcaption>Настройки</figcaption></figure>
+        <div class="case-carousel carousel-portrait" data-carousel aria-label="Галерея экранов Dia-Log">
+          <div class="carousel-viewport" data-carousel-viewport tabindex="0">
+            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-main.png" alt="Дневник Dia-Log с приёмами пищи и дозами" /><figcaption>Дневник</figcaption></figure>
+            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-input.png" alt="Ввод данных о приёме пищи в Dia-Log" /><figcaption>Запись приёма пищи</figcaption></figure>
+            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-correction.png" alt="Ввод коррекции в Dia-Log" /><figcaption>Коррекция</figcaption></figure>
+            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-maincorrection.png" alt="Дневник Dia-Log с коррекциями" /><figcaption>Дневник с коррекциями</figcaption></figure>
+            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-calculate.png" alt="Расчёт дозы в Dia-Log" /><figcaption>Расчёт дозы</figcaption></figure>
+            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-recommendation.png" alt="Рекомендация дозы и объяснение расчёта в Dia-Log" /><figcaption>Объяснение рекомендации</figcaption></figure>
+            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-settings.png" alt="Настройки Dia-Log" /><figcaption>Настройки</figcaption></figure>
+          </div>
+          <div class="carousel-controls"><button class="carousel-button" type="button" data-carousel-prev aria-label="Предыдущий экран" title="Предыдущий экран">&larr;</button><output class="carousel-status" data-carousel-status aria-live="polite"></output><button class="carousel-button" type="button" data-carousel-next aria-label="Следующий экран" title="Следующий экран">&rarr;</button></div>
         </div>
       </section>
     </article>

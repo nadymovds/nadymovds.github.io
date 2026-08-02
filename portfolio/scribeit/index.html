@@ -10,6 +10,7 @@
   <title>Scribeit - Denis Nadymov</title>
   <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
   <link rel="stylesheet" href="../../site.css" />
+  <script src="../gallery.js" defer></script>
 </head>
 <body>
   <main class="page case-page">
@@ -30,12 +31,15 @@
       </section>
       <section class="section case-detail-section">
         <div class="section-header"><h2>Выбранные экраны</h2><p>Путь от лекции к готовому материалу</p></div>
-        <div class="media-grid">
-          <figure class="media-item"><img src="../assets/scribeit/front.png" alt="Стартовый экран Scribeit" /><figcaption>Стартовый экран</figcaption></figure>
-          <figure class="media-item"><img src="../assets/scribeit/in_progress.png" alt="Экран обработки лекции в Scribeit" /><figcaption>Обработка лекции</figcaption></figure>
-          <figure class="media-item"><img src="../assets/scribeit/notes.png" alt="Структурированные заметки, созданные Scribeit" /><figcaption>Структурированные заметки</figcaption></figure>
-          <figure class="media-item"><img src="../assets/scribeit/quiz.png" alt="Квиз, созданный Scribeit по материалам лекции" /><figcaption>Квиз</figcaption></figure>
-          <figure class="media-item"><img src="../assets/scribeit/notification-mail.png" alt="Письмо-уведомление Scribeit о готовых материалах" /><figcaption>Уведомление о готовом материале</figcaption></figure>
+        <div class="case-carousel carousel-landscape" data-carousel aria-label="Галерея экранов Scribeit">
+          <div class="carousel-viewport" data-carousel-viewport tabindex="0">
+            <figure class="carousel-slide"><img src="../assets/scribeit/front.png" alt="Стартовый экран Scribeit" /><figcaption>Стартовый экран</figcaption></figure>
+            <figure class="carousel-slide"><img src="../assets/scribeit/in_progress.png" alt="Экран обработки лекции в Scribeit" /><figcaption>Обработка лекции</figcaption></figure>
+            <figure class="carousel-slide"><img src="../assets/scribeit/notes.png" alt="Структурированные заметки, созданные Scribeit" /><figcaption>Структурированные заметки</figcaption></figure>
+            <figure class="carousel-slide"><img src="../assets/scribeit/quiz.png" alt="Квиз, созданный Scribeit по материалам лекции" /><figcaption>Квиз</figcaption></figure>
+            <figure class="carousel-slide"><img src="../assets/scribeit/notification-mail.png" alt="Письмо-уведомление Scribeit о готовых материалах" /><figcaption>Уведомление о готовом материале</figcaption></figure>
+          </div>
+          <div class="carousel-controls"><button class="carousel-button" type="button" data-carousel-prev aria-label="Предыдущий экран" title="Предыдущий экран">&larr;</button><output class="carousel-status" data-carousel-status aria-live="polite"></output><button class="carousel-button" type="button" data-carousel-next aria-label="Следующий экран" title="Следующий экран">&rarr;</button></div>
         </div>
       </section>
     </article>
