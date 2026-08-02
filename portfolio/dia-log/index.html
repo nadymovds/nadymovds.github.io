@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dia-Log: PWA для ведения дневника и поддержки расчёта дозы при диабете 1 типа." />
+  <meta name="description" content="Dia-Log: a PWA for diary keeping and dose-calculation support in type 1 diabetes." />
   <meta property="og:title" content="Dia-Log - Denis Nadymov" />
-  <meta property="og:description" content="Самостоятельно созданная PWA для быстрого логирования и поддержки расчёта дозы." />
+  <meta property="og:description" content="A self-built PWA for quick logging and dose-calculation support." />
   <meta property="og:type" content="website" />
   <title>Dia-Log - Denis Nadymov</title>
   <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
@@ -14,38 +14,21 @@
 </head>
 <body>
   <main class="page case-page">
-    <header class="topbar"><a class="brand" href="../">Denis Nadymov</a><nav class="nav" aria-label="Основная навигация"><a href="../../product-manager/">Резюме</a><a href="../" aria-current="page">Портфолио</a></nav></header>
-    <p class="back-link"><a href="../">← Все кейсы</a></p>
+    <header class="topbar"><a class="brand" href="../">Denis Nadymov</a><nav class="nav" aria-label="Primary navigation"><a href="../../product-manager/">Resume (RU)</a><a href="../" aria-current="page">Portfolio</a><a href="../../portfolio-ru/dia-log/" lang="ru">Russian</a></nav></header>
+    <p class="back-link"><a href="../">&larr; All case studies</a></p>
     <article>
-      <section class="detail-hero">
-        <div><p class="case-kicker">PWA / sensitive data / AI</p><h1>Dia-Log</h1><p class="headline">Быстрый дневник и поддержка расчёта дозы для диабета 1 типа</p><p class="intro">Мобильная PWA для логирования приёмов пищи, истории, коррекций и расчёта дозы на основе личного контекста.</p></div>
-        <div class="detail-hero-portrait"><img src="../assets/dia-log/screenshot-main.png" alt="Главный экран дневника Dia-Log" /></div>
+      <section class="detail-hero"><div><p class="case-kicker">PWA / sensitive data / AI</p><h1>Dia-Log</h1><p class="headline">A quick diary and dose-calculation support for type 1 diabetes</p><p class="intro">A mobile PWA for meal logging, history, corrections, and dose calculation based on personal context.</p></div><div class="detail-hero-portrait"><img src="../assets/dia-log/screenshot-main.png" alt="Dia-Log diary home screen" /></div></section>
+      <section class="section case-detail-section">
+        <div class="detail-grid"><div><h2>Context</h2><p>This everyday scenario needs few actions, understandable calculations, and constant user control over sensitive data.</p></div><div><h2>What I did</h2><p>I independently designed the product, UX, data model, API integrations, PWA behaviour, and deployment. I accounted for offline access, cross-device synchronisation, and transparent calculation explanations.</p></div></div>
+        <div class="case-result case-result-featured"><span class="case-result-label">Outcome</span><p>Early testing showed a 10-15 percentage-point increase in time in range; meal logging became 4x faster.</p></div>
+        <p class="case-actions"><a class="case-action" href="https://dia-log.scribeit.tech" target="_blank" rel="noreferrer">Open app</a></p>
       </section>
       <section class="section case-detail-section">
-        <div class="detail-grid">
-          <div><h2>Контекст</h2><p>Для ежедневного сценария важны минимальное число действий, понятные расчёты и постоянный контроль пользователя над чувствительными данными.</p></div>
-          <div><h2>Что сделал</h2><p>Самостоятельно спроектировал продукт, UX, модель данных, API-интеграции, PWA-поведение и деплой. Учёл офлайн-доступ, синхронизацию между устройствами и прозрачное объяснение расчётов.</p></div>
-        </div>
-        <div class="case-result case-result-featured"><span class="case-result-label">Эффект</span><p>В раннем тестировании время в целевом диапазоне выросло на 10-15 п.п.; логирование приёма пищи ускорилось в 4 раза.</p></div>
-        <p class="case-actions"><a class="case-action" href="https://dia-log.scribeit.tech" target="_blank" rel="noreferrer">Открыть приложение</a></p>
-      </section>
-      <section class="section case-detail-section">
-        <div class="section-header"><h2>Выбранные экраны</h2><p>Дневник, ввод данных, расчёт и рекомендации</p></div>
-        <div class="case-carousel carousel-portrait" data-carousel aria-label="Галерея экранов Dia-Log">
-          <div class="carousel-viewport" data-carousel-viewport tabindex="0">
-            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-main.png" alt="Дневник Dia-Log с приёмами пищи и дозами" /><figcaption>Дневник</figcaption></figure>
-            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-input.png" alt="Ввод данных о приёме пищи в Dia-Log" /><figcaption>Запись приёма пищи</figcaption></figure>
-            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-correction.png" alt="Ввод коррекции в Dia-Log" /><figcaption>Коррекция</figcaption></figure>
-            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-maincorrection.png" alt="Дневник Dia-Log с коррекциями" /><figcaption>Дневник с коррекциями</figcaption></figure>
-            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-calculate.png" alt="Расчёт дозы в Dia-Log" /><figcaption>Расчёт дозы</figcaption></figure>
-            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-recommendation.png" alt="Рекомендация дозы и объяснение расчёта в Dia-Log" /><figcaption>Объяснение рекомендации</figcaption></figure>
-            <figure class="carousel-slide"><img src="../assets/dia-log/screenshot-settings.png" alt="Настройки Dia-Log" /><figcaption>Настройки</figcaption></figure>
-          </div>
-          <div class="carousel-controls"><button class="carousel-button" type="button" data-carousel-prev aria-label="Предыдущий экран" title="Предыдущий экран">&larr;</button><output class="carousel-status" data-carousel-status aria-live="polite"></output><button class="carousel-button" type="button" data-carousel-next aria-label="Следующий экран" title="Следующий экран">&rarr;</button></div>
-        </div>
+        <div class="section-header"><h2>Selected screens</h2><p>Diary, data entry, calculation, and recommendations</p></div>
+        <div class="case-carousel carousel-portrait" data-carousel aria-label="Dia-Log screen gallery"><div class="carousel-viewport" data-carousel-viewport tabindex="0"><figure class="carousel-slide"><img src="../assets/dia-log/screenshot-main.png" alt="Dia-Log diary with meals and doses" /><figcaption>Diary</figcaption></figure><figure class="carousel-slide"><img src="../assets/dia-log/screenshot-input.png" alt="Meal data entry in Dia-Log" /><figcaption>Meal entry</figcaption></figure><figure class="carousel-slide"><img src="../assets/dia-log/screenshot-correction.png" alt="Correction entry in Dia-Log" /><figcaption>Correction</figcaption></figure><figure class="carousel-slide"><img src="../assets/dia-log/screenshot-maincorrection.png" alt="Dia-Log diary with corrections" /><figcaption>Diary with corrections</figcaption></figure><figure class="carousel-slide"><img src="../assets/dia-log/screenshot-calculate.png" alt="Dose calculation in Dia-Log" /><figcaption>Dose calculation</figcaption></figure><figure class="carousel-slide"><img src="../assets/dia-log/screenshot-recommendation.png" alt="Dose recommendation and calculation explanation in Dia-Log" /><figcaption>Recommendation explanation</figcaption></figure><figure class="carousel-slide"><img src="../assets/dia-log/screenshot-settings.png" alt="Dia-Log settings" /><figcaption>Settings</figcaption></figure></div><div class="carousel-controls"><button class="carousel-button" type="button" data-carousel-prev aria-label="Previous screen" title="Previous screen">&larr;</button><output class="carousel-status" data-carousel-status aria-live="polite"></output><button class="carousel-button" type="button" data-carousel-next aria-label="Next screen" title="Next screen">&rarr;</button></div></div>
       </section>
     </article>
-    <footer class="footer">Denis Nadymov · <a href="../">Портфолио</a> · <a href="../../product-manager/">Резюме</a></footer>
+    <footer class="footer">Denis Nadymov · <a href="../">Portfolio</a> · <a href="../../product-manager/">Resume (RU)</a></footer>
   </main>
 </body>
 </html>
