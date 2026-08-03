@@ -231,15 +231,47 @@ h3 { font-size: 17px; letter-spacing: 0; line-height: 1.28; margin-bottom: 7px; 
 .detail-hero { background: rgba(255, 255, 255, 0.92); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); display: grid; gap: 28px; grid-template-columns: 1.1fr 0.9fr; overflow: hidden; }
 .detail-hero > div:first-child { padding: 38px 0 38px 38px; }
 .detail-hero h1 { font-size: clamp(38px, 5vw, 56px); }
-.detail-hero > img, .detail-hero-portrait { align-self: stretch; background: #eef3ff; min-height: 300px; width: 100%; }
-.detail-hero > img { object-fit: cover; }
-.detail-hero-portrait { align-items: center; display: flex; justify-content: center; }
-.detail-hero-portrait img { height: 100%; max-height: 460px; object-fit: contain; padding: 18px; width: auto; }
+.detail-hero > img, .detail-hero-portrait, .detail-hero-media { align-self: stretch; background: linear-gradient(135deg, #f0f4fd 0%, #e8eeeb 100%); display: flex; align-items: center; justify-content: center; min-height: 300px; overflow: hidden; padding: 24px; position: relative; width: 100%; }
+.detail-hero-media img, .detail-hero-portrait img { border: 1px solid rgba(229, 225, 216, 0.8); border-radius: 12px; box-shadow: 0 10px 32px rgba(31, 41, 51, 0.12); height: auto; max-height: 440px; max-width: 100%; object-fit: contain; width: auto; }
+.detail-hero > img { object-fit: contain; height: auto; max-height: 440px; border-radius: 12px; box-shadow: 0 10px 32px rgba(31, 41, 51, 0.12); }
 .case-detail-section { margin-top: 22px; }
 .detail-grid { display: grid; gap: 28px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .detail-grid h2 { color: var(--accent-dark); font-size: 17px; margin-bottom: 8px; }
 .detail-grid p, .detail-note { color: var(--muted); font-size: 15px; margin-bottom: 0; }
 .case-result-featured { margin-top: 24px; }
+
+/* User Jobs (JTBD) Grid Component */
+.jobs-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.job-card {
+  background: #fbfaf7;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+  border-color: #d0d9eb;
+  box-shadow: 0 4px 14px rgba(31, 41, 51, 0.04);
+}
+
+.job-card h3 {
+  color: var(--accent-dark);
+  font-size: 15.5px;
+  margin-bottom: 6px;
+}
+
+.job-card p {
+  color: var(--muted);
+  font-size: 14.5px;
+  margin-bottom: 0;
+}
 
 /* Evolution Timeline Component */
 .evolution-timeline {
@@ -336,7 +368,7 @@ h3 { font-size: 17px; letter-spacing: 0; line-height: 1.28; margin-bottom: 7px; 
 .footer { color: var(--muted); font-size: 13px; margin-top: 24px; text-align: center; }
 
 @media (max-width: 820px) {
-  .hero, .role, .metrics, .skill-grid, .case-grid, .compact-grid, .detail-hero, .detail-grid { grid-template-columns: 1fr; }
+  .hero, .role, .metrics, .skill-grid, .case-grid, .compact-grid, .detail-hero, .detail-grid, .jobs-grid { grid-template-columns: 1fr; }
   .media-grid, .media-grid-portrait { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .page { padding: 20px 14px 48px; }
   .topbar { align-items: flex-start; flex-direction: column; }
