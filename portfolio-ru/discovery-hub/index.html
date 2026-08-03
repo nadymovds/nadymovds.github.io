@@ -3,49 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="SKAI Discovery Hub: внутренний продукт для объединения рыночных и клиентских исследовательских сигналов." />
-  <meta property="og:title" content="SKAI Discovery Hub - Денис Надымов" />
-  <meta property="og:description" content="Внутренний продукт для исследований рынка, конкурентов и клиентов." />
+  <meta name="description" content="Объединил разрозненные инструменты анализа рынка, конкурентов и потенциальных клиентов в один внутренний продукт и базу знаний с актуальными данными." />
+  <meta property="og:title" content="SKAI: Discovery Hub - Денис Надымов" />
+  <meta property="og:description" content="Объединил разрозненные инструменты анализа рынка, конкурентов и потенциальных клиентов в один внутренний продукт и базу знаний с актуальными данными." />
   <meta property="og:type" content="website" />
-  <title>SKAI Discovery Hub - Денис Надымов</title>
+  <title>SKAI: Discovery Hub - Денис Надымов</title>
   <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
   <link rel="stylesheet" href="../../site.css" />
-  <script src="../../portfolio/gallery.js" defer></script>
+
 </head>
 <body>
-  <main class="page case-page">
+<main class="page case-page">
     <header class="topbar">
       <a class="brand" href="../">Денис Надымов</a>
-      <nav class="nav" aria-label="Основная навигация"><a href="../../product-manager/">Резюме</a><a href="../" aria-current="page">Портфолио</a></nav>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="../../product-manager/">Резюме</a>
+        <a href="../" aria-current="page">Портфолио</a>
+      </nav>
     </header>
-    <p class="back-link"><a href="../">← Все кейсы</a></p>
+    <p class="back-link"><a href="../">&larr; Все кейсы</a></p>
     <article>
-      <section class="detail-hero">
-        <div><p class="case-kicker">Внутренний продукт / AI-автоматизация</p><h1>SKAI: Discovery Hub</h1><p class="headline">Единое окно для рыночных и клиентских исследовательских сигналов</p><p class="intro">Объединил разрозненные инструменты анализа рынка, конкурентов и потенциальных клиентов в один внутренний продукт и базу знаний с актуальными данными.</p></div>
-        <img src="../../portfolio/assets/skai/discovery-hub-cover.png" alt="Нейтральная иллюстрация Discovery Hub: защищённое объединение исследовательских сигналов" />
+      <section class="detail-hero"><div><p class="case-kicker">Внутренний продукт / AI-автоматизация</p><h1>SKAI: Discovery Hub</h1><p class="headline">Единое окно для рыночных и клиентских исследовательских сигналов</p><p class="intro">Объединил разрозненные инструменты анализа рынка, конкурентов и потенциальных клиентов в один внутренний продукт и базу знаний с актуальными данными.</p></div><img src="../../portfolio/assets/skai/discovery-hub-cover.png" alt="Нейтральная иллюстрация Discovery Hub: защищённое объединение исследовательских сигналов" /></section>
+      <section class="section case-detail-section">
+        <div class="detail-grid"><div><h2>Контекст</h2><p>Первые сканеры рынка и конкурентов работали на личных ресурсах. Параллельно развивались отдельные инструменты анализа конкурентов и потенциальных клиентов, поэтому данные и процесс работы были разнесены.</p></div><div><h2>Что сделал</h2><p>Собрал Discovery Hub и единую базу знаний, добавил AI-извлечение jobs, возражений и сильных сторон из записей встреч с клиентами и лидами. Контейнеризировал продукт, перевёз его на корпоративную инфраструктуру и организовал совместную разработку в едином репозитории.</p></div></div>
+        <div class="case-result case-result-featured"><span class="case-result-label">Эффект</span><p>Покрытие ключевых конкурентов: 10 -> 250+. Трудозатраты маркетолога-аналитика: -60 ч/мес.</p></div>
+
       </section>
       <section class="section case-detail-section">
-        <div class="detail-grid">
-          <div><h2>Контекст</h2><p>Первые сканеры рынка и конкурентов работали на личных ресурсах. Параллельно развивались отдельные инструменты анализа конкурентов и потенциальных клиентов, поэтому данные и процесс работы были разнесены.</p></div>
-          <div><h2>Что сделал</h2><p>Собрал Discovery Hub и единую базу знаний, добавил AI-извлечение jobs, возражений и сильных сторон из записей встреч с клиентами и лидами. Контейнеризировал продукт, перевёз его на корпоративную инфраструктуру и организовал совместную разработку в едином репозитории.</p></div>
+    <div class="section-header"><h2>Эволюция продукта</h2><p>Путь от самостоятельного скрипта в Colab до единого корпоративного хаба и процессов параллельной разработки</p></div>
+    <div class="evolution-timeline"><article class="evolution-step">
+        <div class="evolution-badge">01</div>
+        <div class="evolution-content">
+          <h3>0->1 Прототип (Python + LLM)</h3>
+          <p class="evolution-sub">Автоматический анализ изменений в Colab</p>
+          <p>С нуля создал скрипт на Python для Google Colab: периодически сканировал сайты конкурентов, сравнивал новые версии со старыми и с помощью LLM генерировал PDF-отчёты с анализом изменений.</p>
+          <div class="evolution-tags"><span class="evolution-tag">Python</span><span class="evolution-tag">Google Colab</span><span class="evolution-tag">LLM</span><span class="evolution-tag">PDF Reports</span></div>
         </div>
-        <div class="case-result case-result-featured"><span class="case-result-label">Эффект</span><p>Покрытие ключевых конкурентов: 10 -&gt; 250+. Трудозатраты маркетолога-аналитика: -60 ч/мес.</p></div>
-      </section>
-      <section class="section case-detail-section">
-        <div class="section-header"><h2>Экранные материалы</h2><p>Дашборд, лента новостей, мониторинг конкурентов</p></div>
-        <div class="case-carousel carousel-landscape" data-carousel aria-label="Галерея экранов SKAI Discovery Hub">
-          <div class="carousel-viewport" data-carousel-viewport tabindex="0">
-            <figure class="carousel-slide"><img src="../../portfolio/assets/skai/discovery-hub-1.png" alt="SKAI Discovery Hub — главный дашборд со всеми разделами платформы и быстрыми показателями" /><figcaption>Главный дашборд</figcaption></figure>
-            <figure class="carousel-slide"><img src="../../portfolio/assets/skai/discovery-hub-2.png" alt="SKAI Discovery Hub — лента новостей, отфильтрованная по обновлениям конкурентов" /><figcaption>Лента новостей — конкуренты</figcaption></figure>
-            <figure class="carousel-slide"><img src="../../portfolio/assets/skai/discovery-hub-3.png" alt="SKAI Discovery Hub — лента новостей, отфильтрованная по новостям отрасли" /><figcaption>Лента новостей — новости отрасли</figcaption></figure>
-          </div>
-          <div class="carousel-controls">
-            <button class="carousel-button" type="button" data-carousel-prev aria-label="Предыдущий экран" title="Предыдущий экран">&larr;</button>
-            <output class="carousel-status" data-carousel-status aria-live="polite"></output>
-            <button class="carousel-button" type="button" data-carousel-next aria-label="Следующий экран" title="Следующий экран">&rarr;</button>
-          </div>
+      </article><article class="evolution-step">
+        <div class="evolution-badge">02</div>
+        <div class="evolution-content">
+          <h3>Telegram Mini App & Cloud</h3>
+          <p class="evolution-sub">Облачные сканеры и авто-уведомления</p>
+          <p>Создал Telegram Mini App и добавил сканер отраслевых новостей. Перевёл архитектуру на serverless-решение и облачную БД, настроив доставку результатов сканирований в ТГ.</p>
+          <div class="evolution-tags"><span class="evolution-tag">Telegram Mini App</span><span class="evolution-tag">Serverless</span><span class="evolution-tag">Cloud DB</span><span class="evolution-tag">News Scanner</span></div>
         </div>
-      </section>
+      </article><article class="evolution-step">
+        <div class="evolution-badge">03</div>
+        <div class="evolution-content">
+          <h3>Единое окно</h3>
+          <p class="evolution-sub">Интеграция сторонних веб-модулей</p>
+          <p>Интегрировал собственные сканеры с веб-приложением другого разработчика (содержавшим статичные страницы рыночного позиционирования, сравнения фич, материалы конференций и карточки лидов).</p>
+          <div class="evolution-tags"><span class="evolution-tag">Web Integration</span><span class="evolution-tag">Competitor Matrix</span><span class="evolution-tag">Lead Cards</span></div>
+        </div>
+      </article><article class="evolution-step">
+        <div class="evolution-badge">04</div>
+        <div class="evolution-content">
+          <h3>Enterprise Hub & AI-транскрипты</h3>
+          <p class="evolution-sub">Docker, корпоративная инфраструктура и AI</p>
+          <p>Упаковал всё в один продукт, настроил авторизацию по корп. почте, контейнеризировал в Docker и перенёс на инфраструктуру компании. Добавил AI-анализ встреч с клиентами (экстракция Jobs, возражений, преимуществ).</p>
+          <div class="evolution-tags"><span class="evolution-tag">Docker</span><span class="evolution-tag">Corporate Auth</span><span class="evolution-tag">Corp Infra</span><span class="evolution-tag">Transcript AI</span></div>
+        </div>
+      </article><article class="evolution-step">
+        <div class="evolution-badge">05</div>
+        <div class="evolution-content">
+          <h3>Vibe-Coding Workflow</h3>
+          <p class="evolution-sub">Параллельная разработка в едином репозитории</p>
+          <p>Настроил и внедрил рабочий процесс для параллельной работы нескольких контрибьюторов (вайбкодеров) с одной кодовой базой — впервые в практике компании.</p>
+          <div class="evolution-tags"><span class="evolution-tag">Vibe-Coding</span><span class="evolution-tag">Git Workflow</span><span class="evolution-tag">Team Scaling</span></div>
+        </div>
+      </article></div>
+  </section>
+      <section class="section case-detail-section"><div class="section-header"><h2>Выбранные экраны</h2><p>Не публикуются</p></div><p class="detail-note">Интерфейсы Discovery Hub содержат внутренние данные компании. До появления обезличенных скриншотов здесь показаны только безопасное описание продукта и нейтральная обложка.</p></section>
     </article>
     <footer class="footer">Денис Надымов · <a href="../">Портфолио</a> · <a href="../../product-manager/">Резюме</a></footer>
   </main>

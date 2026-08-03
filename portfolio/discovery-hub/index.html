@@ -3,43 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="SKAI Discovery Hub: an internal product that brings market and customer research signals together." />
-  <meta property="og:title" content="SKAI Discovery Hub - Denis Nadymov" />
-  <meta property="og:description" content="An internal product for market, competitor, and customer research." />
+  <meta name="description" content="I brought separate tools for market, competitor, and prospective-customer analysis into one internal product and knowledge base with current data." />
+  <meta property="og:title" content="SKAI: Discovery Hub - Denis Nadymov" />
+  <meta property="og:description" content="I brought separate tools for market, competitor, and prospective-customer analysis into one internal product and knowledge base with current data." />
   <meta property="og:type" content="website" />
-  <title>SKAI Discovery Hub - Denis Nadymov</title>
+  <title>SKAI: Discovery Hub - Denis Nadymov</title>
   <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
   <link rel="stylesheet" href="../../site.css" />
-  <script src="../gallery.js" defer></script>
+
 </head>
 <body>
-  <main class="page case-page">
-    <header class="topbar"><a class="brand" href="../">Denis Nadymov</a><nav class="nav" aria-label="Primary navigation"><a href="../../product-manager/">Resume (RU)</a><a href="../" aria-current="page">Portfolio</a></nav></header>
+<main class="page case-page">
+    <header class="topbar">
+      <a class="brand" href="../">Denis Nadymov</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../../product-manager/">Resume (RU)</a>
+        <a href="../" aria-current="page">Portfolio</a>
+      </nav>
+    </header>
     <p class="back-link"><a href="../">&larr; All case studies</a></p>
     <article>
-      <section class="detail-hero">
-        <div><p class="case-kicker">Internal product / AI automation</p><h1>SKAI: Discovery Hub</h1><p class="headline">One workspace for market and customer research signals</p><p class="intro">I brought separate tools for market, competitor, and prospective-customer analysis into one internal product and knowledge base with current data.</p></div>
-        <img src="../assets/skai/discovery-hub-cover.png" alt="Neutral illustration of Discovery Hub combining protected research signals" />
-      </section>
+      <section class="detail-hero"><div><p class="case-kicker">Internal product / AI automation</p><h1>SKAI: Discovery Hub</h1><p class="headline">One workspace for market and customer research signals</p><p class="intro">I brought separate tools for market, competitor, and prospective-customer analysis into one internal product and knowledge base with current data.</p></div><img src="../assets/skai/discovery-hub-cover.png" alt="Neutral illustration of Discovery Hub combining protected research signals" /></section>
       <section class="section case-detail-section">
         <div class="detail-grid"><div><h2>Context</h2><p>The first market and competitor scanners ran on personal infrastructure. Separate competitor and prospective-customer analysis tools evolved in parallel, splitting both data and working processes.</p></div><div><h2>What I did</h2><p>I built Discovery Hub and a unified knowledge base, added AI extraction of jobs, objections, and strengths from customer and lead meeting recordings, containerised the product, moved it to corporate infrastructure, and set up collaborative development in one repository.</p></div></div>
-        <div class="case-result case-result-featured"><span class="case-result-label">Outcome</span><p>Key competitor coverage: 10 -&gt; 250+. Market analyst effort: -60 hours per month.</p></div>
+        <div class="case-result case-result-featured"><span class="case-result-label">Outcome</span><p>Key competitor coverage: 10 -> 250+. Market analyst effort: -60 hours per month.</p></div>
+
       </section>
       <section class="section case-detail-section">
-        <div class="section-header"><h2>Product screens</h2><p>Dashboard, news feed, competitor monitoring</p></div>
-        <div class="case-carousel carousel-landscape" data-carousel aria-label="SKAI Discovery Hub screen gallery">
-          <div class="carousel-viewport" data-carousel-viewport tabindex="0">
-            <figure class="carousel-slide"><img src="../assets/skai/discovery-hub-1-en.png" alt="SKAI Discovery Hub main dashboard showing all platform sections and quick stats" /><figcaption>Main dashboard</figcaption></figure>
-            <figure class="carousel-slide"><img src="../assets/skai/discovery-hub-2-en.png" alt="SKAI Discovery Hub news feed filtered by competitor updates" /><figcaption>News feed — competitor updates</figcaption></figure>
-            <figure class="carousel-slide"><img src="../assets/skai/discovery-hub-3-en.png" alt="SKAI Discovery Hub news feed filtered by industry news" /><figcaption>News feed — industry news</figcaption></figure>
-          </div>
-          <div class="carousel-controls">
-            <button class="carousel-button" type="button" data-carousel-prev aria-label="Previous screen" title="Previous screen">&larr;</button>
-            <output class="carousel-status" data-carousel-status aria-live="polite"></output>
-            <button class="carousel-button" type="button" data-carousel-next aria-label="Next screen" title="Next screen">&rarr;</button>
-          </div>
+    <div class="section-header"><h2>Product Evolution</h2><p>From an independent Colab script to an enterprise hub and collaborative vibe-coding workflow</p></div>
+    <div class="evolution-timeline"><article class="evolution-step">
+        <div class="evolution-badge">01</div>
+        <div class="evolution-content">
+          <h3>0->1 Prototype (Python + LLM)</h3>
+          <p class="evolution-sub">Automated Diff Analysis in Google Colab</p>
+          <p>Independently built a Python script running in Google Colab to track competitor websites, compare version diffs, and use LLMs to generate PDF change reports.</p>
+          <div class="evolution-tags"><span class="evolution-tag">Python</span><span class="evolution-tag">Google Colab</span><span class="evolution-tag">LLM</span><span class="evolution-tag">PDF Reports</span></div>
         </div>
-      </section>
+      </article><article class="evolution-step">
+        <div class="evolution-badge">02</div>
+        <div class="evolution-content">
+          <h3>Telegram Mini App & Serverless</h3>
+          <p class="evolution-sub">Cloud Scanners & Automated Alerts</p>
+          <p>Built a Telegram Mini App and added an industry news scanner. Migrated to a serverless architecture with a cloud DB and automated Telegram scan notifications.</p>
+          <div class="evolution-tags"><span class="evolution-tag">Telegram Mini App</span><span class="evolution-tag">Serverless</span><span class="evolution-tag">Cloud DB</span><span class="evolution-tag">News Scanner</span></div>
+        </div>
+      </article><article class="evolution-step">
+        <div class="evolution-badge">03</div>
+        <div class="evolution-content">
+          <h3>Single-Pane Integration</h3>
+          <p class="evolution-sub">Integrating External Web App</p>
+          <p>Integrated custom scanners with a peer developer's web app (hosting competitor market positions, feature comparisons, conference materials, and lead cards) into a single interface.</p>
+          <div class="evolution-tags"><span class="evolution-tag">Web Integration</span><span class="evolution-tag">Competitor Matrix</span><span class="evolution-tag">Lead Cards</span></div>
+        </div>
+      </article><article class="evolution-step">
+        <div class="evolution-badge">04</div>
+        <div class="evolution-content">
+          <h3>Enterprise Hub & Call AI Analysis</h3>
+          <p class="evolution-sub">Docker, Corp Infra & Call Transcripts</p>
+          <p>Packaged everything into one enterprise product, added corporate email auth, Dockerized and deployed on company infra, adding AI call transcript analysis for customer jobs, objections, and strengths.</p>
+          <div class="evolution-tags"><span class="evolution-tag">Docker</span><span class="evolution-tag">Corporate Auth</span><span class="evolution-tag">Corp Infra</span><span class="evolution-tag">Transcript AI</span></div>
+        </div>
+      </article><article class="evolution-step">
+        <div class="evolution-badge">05</div>
+        <div class="evolution-content">
+          <h3>Collaborative Vibe-Coding</h3>
+          <p class="evolution-sub">Shared Repo & Team Scaling</p>
+          <p>Established and standardized a parallel development workflow for multiple vibe-coder contributors sharing a single codebase — a first for the company.</p>
+          <div class="evolution-tags"><span class="evolution-tag">Vibe-Coding</span><span class="evolution-tag">Git Workflow</span><span class="evolution-tag">Team Scaling</span></div>
+        </div>
+      </article></div>
+  </section>
+      <section class="section case-detail-section"><div class="section-header"><h2>Selected screens</h2><p>Not published</p></div><p class="detail-note">Discovery Hub interfaces contain company-internal data. Until redacted screenshots are available, this case study contains only a safe product description and a neutral cover image.</p></section>
     </article>
     <footer class="footer">Denis Nadymov · <a href="../">Portfolio</a> · <a href="../../product-manager/">Resume (RU)</a></footer>
   </main>
