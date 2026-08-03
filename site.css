@@ -123,8 +123,8 @@ h3 { font-size: 17px; letter-spacing: 0; line-height: 1.28; margin-bottom: 7px; 
 
 .case { overflow: hidden; padding: 0; }
 .case-copy { padding: 20px; }
-.case-cover { aspect-ratio: 16 / 9; background: #eef3ff; display: block; object-fit: cover; width: 100%; }
-.case-cover-contain { object-fit: contain; }
+.case-cover { aspect-ratio: 16 / 9; background: linear-gradient(135deg, #f0f4fd 0%, #e8eeeb 100%); display: block; object-fit: cover; width: 100%; }
+.case-cover-contain { object-fit: contain; padding: 12px; }
 .case-kicker { color: var(--accent-dark); font-size: 12px; font-weight: 800; margin-bottom: 7px; text-transform: uppercase; }
 .case-result { background: var(--tag-bg); border: 1px solid #d9e4ff; border-radius: 12px; margin-top: 20px; padding: 14px 16px; }
 .case-result-label { color: var(--tag-text); display: block; font-size: 12px; font-weight: 800; margin-bottom: 5px; text-transform: uppercase; }
