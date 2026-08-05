@@ -17,7 +17,7 @@
     <header class="topbar">
       <a class="brand" href="../">Denis Nadymov</a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="../../product-manager/">Resume (RU)</a>
+
         <a href="../" aria-current="page">Portfolio</a>
       </nav>
     </header>
@@ -96,16 +96,21 @@
       </article></div>
   </section>
       <section class="section case-detail-section">
-        <div class="section-header"><h2>Selected screens</h2><p>Product screens</p></div>
-        <div class="case-carousel carousel-landscape" data-carousel aria-label="SKAI: Discovery Hub Selected screens">
-          <div class="carousel-viewport" data-carousel-viewport tabindex="0">
-            <figure class="carousel-slide"><img src="../assets/skai/discovery-hub-1-en.png" alt="SKAI Discovery Hub main dashboard showing all platform sections and quick stats" /><figcaption>Main dashboard</figcaption></figure><figure class="carousel-slide"><img src="../assets/skai/discovery-hub-2-en.png" alt="SKAI Discovery Hub news feed filtered by competitor updates" /><figcaption>News feed — competitor updates</figcaption></figure><figure class="carousel-slide"><img src="../assets/skai/discovery-hub-3-en.png" alt="SKAI Discovery Hub news feed filtered by industry news" /><figcaption>News feed — industry news</figcaption></figure>
-          </div>
-          <div class="carousel-controls"><button class="carousel-button" type="button" data-carousel-prev aria-label="Previous screen" title="Previous screen">&larr;</button><output class="carousel-status" data-carousel-status aria-live="polite"></output><button class="carousel-button" type="button" data-carousel-next aria-label="Next screen" title="Next screen">&rarr;</button></div>
-        </div>
-      </section>
+    <div class="section-header"><h2>Selected screens</h2></div>
+    <div class="gallery" data-gallery>
+      <div class="gallery-stage">
+        <img class="gallery-image" data-gallery-image src="../assets/skai/discovery-hub-1-en.png" alt="SKAI Discovery Hub main dashboard showing all platform sections and quick stats" />
+        <figcaption class="gallery-caption" data-gallery-caption>Main dashboard</figcaption>
+      </div>
+      <div class="gallery-controls">
+        <button class="gallery-button" data-gallery-prev type="button" aria-label="Previous screen">←</button>
+        <div class="gallery-dots" data-gallery-dots><button class="gallery-dot active" data-gallery-dot="0" type="button" aria-label="Slide 1"></button><button class="gallery-dot" data-gallery-dot="1" type="button" aria-label="Slide 2"></button><button class="gallery-dot" data-gallery-dot="2" type="button" aria-label="Slide 3"></button></div>
+        <button class="gallery-button" data-gallery-next type="button" aria-label="Next screen">→</button>
+      </div>
+    </div>
+  </section>
     </article>
-    <footer class="footer">Denis Nadymov · <a href="../">Portfolio</a> · <a href="../../product-manager/">Resume (RU)</a></footer>
+    <footer class="footer">Denis Nadymov · <a href="../">Portfolio</a> · <a href="mailto:nadymov.ds@gmail.com">nadymov.ds@gmail.com</a></footer>
   </main>
 </body>
 </html>
