@@ -32,16 +32,15 @@
 
 
       <section class="section case-detail-section">
-    <div class="section-header"><h2>Выбранные экраны</h2></div>
-    <div class="gallery" data-gallery>
-      <div class="gallery-stage">
-        <img class="gallery-image" data-gallery-image src="../../portfolio/assets/nutri-buddy/client-diary.png" alt="Мобильный дневник клиента Nutri Buddy с записями о питании и самочувствии" />
-        <figcaption class="gallery-caption" data-gallery-caption>Дневник клиента</figcaption>
+    <div class="section-header"><h2>Выбранные экраны</h2><p>Дневник клиента, рабочее пространство специалиста и динамика показателей</p></div>
+    <div class="case-carousel carousel-portrait" data-carousel>
+      <div class="carousel-viewport" data-carousel-viewport tabindex="0" aria-label="Выбранные экраны">
+        <figure class="carousel-slide"><img src="../../portfolio/assets/nutri-buddy/client-diary.png" alt="Мобильный дневник клиента Nutri Buddy с записями о питании и самочувствии" /><figcaption>Дневник клиента</figcaption></figure><figure class="carousel-slide"><img src="../../portfolio/assets/nutri-buddy/specialist-workspace.png" alt="Кабинет нутрициолога Nutri Buddy со списком клиентов и настройками дневника" /><figcaption>Кабинет нутрициолога</figcaption></figure><figure class="carousel-slide"><img src="../../portfolio/assets/nutri-buddy/specialist-trends.png" alt="Дашборд трендов клиента в кабинете нутрициолога Nutri Buddy" /><figcaption>Динамика показателей клиента</figcaption></figure>
       </div>
-      <div class="gallery-controls">
-        <button class="gallery-button" data-gallery-prev type="button" aria-label="Предыдущий экран">←</button>
-        <div class="gallery-dots" data-gallery-dots><button class="gallery-dot active" data-gallery-dot="0" type="button" aria-label="Slide 1"></button><button class="gallery-dot" data-gallery-dot="1" type="button" aria-label="Slide 2"></button><button class="gallery-dot" data-gallery-dot="2" type="button" aria-label="Slide 3"></button></div>
-        <button class="gallery-button" data-gallery-next type="button" aria-label="Следующий экран">→</button>
+      <div class="carousel-controls">
+        <button class="carousel-button" data-carousel-prev type="button" aria-label="Предыдущий экран">←</button>
+        <output class="carousel-status" data-carousel-status aria-live="polite">1 / 3</output>
+        <button class="carousel-button" data-carousel-next type="button" aria-label="Следующий экран">→</button>
       </div>
     </div>
   </section>
